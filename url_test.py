@@ -68,7 +68,8 @@ def url_test(link):
         # Not an HTTP-specific error (e.g. connection refused)
         print('URL ERR: {}'.format(e.reason))
     except ValueError:
-        print(ValueError + 'Uncorrect link')
+        print(ValueError)
+        print('Uncorrect link')
     else:
         # 200
         print('OK')
